@@ -65,13 +65,26 @@ Or edit the credentials directly in `main.js` (lines 8-9).
 
 **IMPORTANT**: You must launch Chrome with remote debugging enabled on port 9223 before running the application.
 
-#### For Mac Users:
+#### Quick Start (Recommended):
 
+**For Mac Users:**
+```bash
+./launch-chrome.sh
+```
+
+**For Windows Users:**
+```cmd
+launch-chrome.bat
+```
+
+#### Manual Launch:
+
+**For Mac Users:**
 ```bash
 /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9223 --user-data-dir="/Users/$(whoami)/Library/Application Support/Google/Chrome/Profile 1"
 ```
 
-#### For Windows Users:
+**For Windows Users:**
 
 Option 1 - Command Prompt:
 ```cmd
@@ -147,6 +160,8 @@ Carfax-Website/
 ├── main.js                # Carfax automation script
 ├── server.js              # Express backend server
 ├── package.json           # Backend dependencies
+├── launch-chrome.sh       # Mac Chrome launcher script
+├── launch-chrome.bat      # Windows Chrome launcher script
 ├── .gitignore            # Git ignore rules
 └── README.md             # This file
 ```
